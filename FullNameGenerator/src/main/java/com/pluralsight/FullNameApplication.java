@@ -20,6 +20,7 @@ public class FullNameApplication {
             fullName = fullName + ", " + suffix;
         }
         System.out.println("Full Name: " + fullName);
+        
     }
 
     public static String promptForString (String prompt){
