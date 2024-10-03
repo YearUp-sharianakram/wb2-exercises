@@ -13,7 +13,7 @@ public class Main {
         int ticketAmount = promptForInt("How many tickets would you like? ");
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
         LocalDate date = LocalDate.parse(dateUserEntry, formatter);
-        String ticketWord = (ticketAmount == 1) ? "ticket" : "tickets";
+        String ticketWord = (ticketAmount == 1) ? "ticket" : "tic";
         String[] names = fullName.split(" ");
         System.out.println(ticketAmount + " "  + ticketWord + " reserved for " + date + " under " + names[1] + ", " + names[0] );
     }
