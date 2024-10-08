@@ -3,13 +3,18 @@ package com.pluralsight;
 public class Main {
     public static void main(String[] args) {
         CellPhone phone1 = new CellPhone();
-        CellPhone phone2 = new CellPhone();
+//        CellPhone phone2 = new CellPhone();
         promptForCellPhone(phone1);
-        promptForCellPhone(phone2);
+//        promptForCellPhone(phone2);
         display(phone1);
-        display(phone2);
-        phone1.dial(phone2.getPhoneNumber());
-        phone2.dial(phone1.getPhoneNumber());
+//        display(phone2);
+//        phone1.dial(phone2.getPhoneNumber());
+//        phone2.dial(phone1.getPhoneNumber());
+
+        CellPhone phone3  = new CellPhone(33333, "iphone","T-mobile","333-333-3333","Karen");
+        display(phone3);
+
+        phone3.dial(phone1);
 
 
 
